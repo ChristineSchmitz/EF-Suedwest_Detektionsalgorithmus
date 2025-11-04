@@ -1,6 +1,6 @@
-# DLR-Detection
+# Experimentierfeld Südwest - Detection
 ## Introduction
-This repository was developed as a project of the Dienstleistungszentrum Ländlicher Raum Rheinland Pfalz. The goal was to develop an algorithm that can automatically detect apples and different stages of apple flowers in images. It is designed to work with an entire row of trees. Given images of the row it can produce an approximate number of apples and flowers. This can help farmers get an approximate yield prediction and help them with decisions like if and where they need to thin out flowers.
+This repository was developed as part of the project [Experimentierfeld Südwest](https://ef-sw.de/) at the Dienstleistungszentrum Ländlicher Raum Rheinpfalz. The goal was to develop an algorithm that can automatically detect apples and different stages of apple flowers in images. It is designed to work with an entire row of trees. Given images of the row it can produce an approximate number of apples and flowers. This can help farmers get an approximate yield prediction and help them with decisions like if and where they need to thin out flowers.
 
 ## How it works
 The program works with a sequence of images of a row of apple trees. This sequence should contain one image for every tree in the row. If your images are not filtered this way you can use the program to automatically filter the images to have one image per tree. This automatic filtering needs every image to have a GPS coordinate and builds a list of equally spaced coordinates between the coordinates of the first and last trees. The number of coordinates in the list is equal to the number of trees in the row. It then assigns one image to each coordinate based on the GPS coordinate of the image. 
@@ -25,3 +25,6 @@ Anaconda package manager is required to install the dependicies via the yml file
 conda env create -f environment.yml
 ```
 In addition, some program to run the main Jupyter Notebook is needed.
+
+## Funding
+This work was part of the [Experimentierfeld Südwest](https://ef-sw.de/) funded by the German Federal Ministry of Food and Agriculture [grant number: 28DE111B22].
