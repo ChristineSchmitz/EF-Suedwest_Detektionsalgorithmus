@@ -1,4 +1,6 @@
 # Experimentierfeld Südwest - Detection
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17523107.svg)](https://doi.org/10.5281/zenodo.17523107)
+
 ## Introduction
 This repository was developed as part of the project [Experimentierfeld Südwest](https://ef-sw.de/) at the Dienstleistungszentrum Ländlicher Raum Rheinpfalz. The goal was to develop an algorithm that can automatically detect apples and different stages of apple flowers in images. It is designed to work with an entire row of trees. Given images of the row it can produce an approximate number of apples and flowers. This can help farmers get an approximate yield prediction and help them with decisions like if and where they need to thin out flowers.
 
